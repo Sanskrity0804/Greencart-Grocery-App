@@ -45,8 +45,12 @@ const Cart = () => {
                     <p className="text-center">Action</p>
                 </div>
 
-                {cartArray.map((product, index) => (
-                    <div key={index} className="grid grid-cols-[2fr_1fr_1fr] text-gray-500 items-center text-sm md:text-base font-medium pt-3">
+                {/* {cartArray.map((product, index) => (
+                    <div key={index}  */}
+
+                    {cartArray.map((product) => (
+                    <div key={product._id}
+                    className="grid grid-cols-[2fr_1fr_1fr] text-gray-500 items-center text-sm md:text-base font-medium pt-3">
                         <div className="flex items-center md:gap-6 gap-3">
                             <div onClick={()=>{
                                 navigate(`/products/${product.category.toLowerCase()}/${product._id}`); scrollTo(0,0)
@@ -102,6 +106,7 @@ const Cart = () => {
                                         {address.street}, {address.city}, {address.state}, {address.country}
                                     </p>
                                 ))}
+
                                 <p onClick={() => navigate("/add-address")} className="text-primary text-center cursor-pointer p-2 hover:bg-primary/10">
                                     Add address
                                 </p>
