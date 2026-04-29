@@ -5,7 +5,7 @@ import {useAppContext} from "../context/AppContext";
 
 
 const ProductCard = ({product}) => {
-    // const [count, setCount] = React.useState(0);
+    
     const {currency, addToCart, removeFromCart, cartItems, navigate} = useAppContext();
 
 
@@ -33,9 +33,6 @@ const ProductCard = ({product}) => {
                     <div onClick={(e) => {e.stopPropagation();}}  className="text-primary">
                         {!cartItems[product._id] ? (
                             <button className="flex items-center justify-center gap-1 bg-primary/10 border border-primary/40 md:w-[80px] w-[64px] h-[34px] rounded cursor-pointer" onClick={() => addToCart(product._id)} >
-                                {/* <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0" stroke="#615fff" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg> */}
                                 <img src={assets.cart_icon} alt='cart_icon'/>
                                 Add
                             </button>

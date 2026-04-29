@@ -106,9 +106,6 @@ const Cart = () => {
                     <p className="text-center">Action</p>
                 </div>
 
-                {/* {cartArray.map((product, index) => (
-                    <div key={index}  */}
-
                     {cartArray.map((product) => (
                     <div key={product._id}
                     className="grid grid-cols-[2fr_1fr_1fr] text-gray-500 items-center text-sm md:text-base font-medium pt-3">
