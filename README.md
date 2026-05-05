@@ -100,15 +100,12 @@ cd Greencart-Grocery-App
 
 ### 2️⃣ Install Dependencies
 
-**Frontend**
-
+# Frontend
 cd client
 npm install
 npm run dev
 
-
-**Backend**
-
+# Backend
 cd server
 npm install
 npm start
@@ -116,11 +113,6 @@ npm start
 
 ---
 
-## 📸 Screenshots
-
-_Add your project screenshots here_
-
----
 
 ## 🎯 Future Improvements
 
