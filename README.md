@@ -64,17 +64,24 @@ Greencart-Grocery-App/
 
 ---
 
-## 🔑 Environment Variables
+### 🔐 Environment Variables
 
-Create a `.env` file in your backend:
+Create a `.env` file in the root directory:
 
-
+# Server
 PORT=4000
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_secret_key
 FRONTEND_URL=http://localhost:5173
 
+# Database
+MONGO_URI=your_mongodb_connection
+
+# Auth
+JWT_SECRET=your_secret_key
+
+# Payments
 STRIPE_SECRET_KEY=your_stripe_key
+
+# Cloudinary
 CLOUDINARY_NAME=your_name
 CLOUDINARY_API_KEY=your_key
 CLOUDINARY_SECRET_KEY=your_secret
