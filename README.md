@@ -68,48 +68,42 @@ Greencart-Grocery-App/
 
 Create a `.env` file in the root directory:
 
-# Server
-PORT=4000
-FRONTEND_URL=http://localhost:5173
+Server  
+PORT=4000  
+FRONTEND_URL=http://localhost:5173  
 
-# Database
-MONGO_URI=your_mongodb_connection
+Database  
+MONGO_URI=your_mongodb_connection  
 
-# Auth
-JWT_SECRET=your_secret_key
+Auth  
+JWT_SECRET=your_secret_key  
 
-# Payments
-STRIPE_SECRET_KEY=your_stripe_key
+Payments  
+STRIPE_SECRET_KEY=your_stripe_key  
 
-# Cloudinary
-CLOUDINARY_NAME=your_name
-CLOUDINARY_API_KEY=your_key
-CLOUDINARY_SECRET_KEY=your_secret
+Cloudinary  
+CLOUDINARY_NAME=your_name  
+CLOUDINARY_API_KEY=your_key  
+CLOUDINARY_SECRET_KEY=your_secret_key  
 
+🚀 Installation & Setup  
 
----
+1️⃣ Clone Repository  
+git clone https://github.com/Sanskrity0804/Greencart-Grocery-App  
 
-## 🚀 Installation & Setup
+cd Greencart-Grocery-App  
 
-### 1️⃣ Clone Repository
+2️⃣ Install Dependencies  
 
-git clone (https://github.com/Sanskrity0804/Greencart-Grocery-App)
+Frontend  
+cd client  
+npm install  
+npm run dev  
 
-cd Greencart-Grocery-App
-
-
-### 2️⃣ Install Dependencies
-
-Frontend:
-• cd client  
-• npm install  
-• npm run dev  
-
-Backend:
-• cd server  
-• npm install  
-• npm start  
-
+Backend  
+cd server  
+npm install  
+npm start
 
 ---
 
